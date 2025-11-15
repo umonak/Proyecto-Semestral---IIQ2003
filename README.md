@@ -10,10 +10,10 @@
 ---
 
 ### Detalles de la Entrega
-**Integrantes:** Benjamín Mondaca, Clemente de Geyter y Rona Tempel.
-**Ayudante:** Carlos Soto 
-**Profesor:** Felipe Huerta 
-**Fecha:** 9 de diciembre de 2025 
+* **Integrantes:** Benjamín Mondaca, Clemente de Geyter y Rona Tempel.
+* **Ayudante:** Carlos Soto 
+* **Profesor:** Felipe Huerta 
+* **Fecha:** 9 de diciembre de 2025 
 
 ---
 
