@@ -26,15 +26,15 @@ De esta manera, el objetivo de este proyecto es realizar un modelo relacionado a
 
 ## Explicación breve sistema modelado
 El transporte y dispersión de los contaminantes se rige principalmente por los siguientes fenómenos:
-# Advección:** Corresponde al fenómeno en donde los contaminantes son empujados por la velocidad de la corriente del río en la dirección longitudinal (x). Este fenómeno es el dominante en este eje.
-# Difusión turbulenta:** Se refiere a la dispersión del contaminante en la dirección transversal (y) debido a la turbulencia del flujo.
-# Reacción química:** Corresponde, en este caso, a la desintegración de los contaminantes (p. ej., biodegradación) en una velocidad de reacción de primero orden.
+* Advección:** Corresponde al fenómeno en donde los contaminantes son empujados por la velocidad de la corriente del río en la dirección longitudinal (x). Este fenómeno es el dominante en este eje.
+* Difusión turbulenta:** Se refiere a la dispersión del contaminante en la dirección transversal (y) debido a la turbulencia del flujo.
+* Reacción química:** Corresponde, en este caso, a la desintegración de los contaminantes (p. ej., biodegradación) en una velocidad de reacción de primero orden.
 
 A su vez, para la simplificación del problema y un modelamiento correcto, se plantean los siguientes supuestos clave:
-# Estado estacionario (dC/dt = 0): 
-# Concentración constante en z:
-# Difusión despreciable en x:
-# Difusividad transversal y velocidades constantes:
+* Estado estacionario (dC/dt = 0): 
+* Concentración constante en z:
+* Difusión despreciable en x:
+* Difusividad transversal y velocidades constantes:
 ![Diagrama del proyecto](./imagenes/diagrama.png)
 
 ## Instrucciones ejecución código 
