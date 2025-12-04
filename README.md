@@ -1,4 +1,4 @@
-# Proyecto Semestral: Modelamiento de fenómenos de transporte para Chile: Emisión de contaminantes en ríos
+# Proyecto Semestral: Modelamiento de Emisión de Contaminantes en Ríos
 
 ### Información del Curso
 * **Universidad:** Pontificia Universidad Católica de Chile
@@ -17,9 +17,24 @@
 
 ---
 
-## Contextualización y Justificación del problema
+## Descripción general
+Este proyecto aborda el modelamiento de la dispersión de contaminantes en cursos de agua (ríos o canales), enfocándose en la contaminación de estos, un problema crítico y de alta relevancia en Chile. La crisis hídrica en el país depende de muchos factores, siendo el desecho de productos químicos (como farmacéuticos o agroindustriales) uno de los factores más relevantes, donde un 14% de los problemas hídricos provienen de desechos químcos en la agroindustria (Universidad de Chile, 2022). 
 
-## Descripción sistema físico y modelamiento matemático
+Asimismo, la contaminación de cursos de agua representa uno de los problemas más relevantes en la actualidad, de manera que se tienen distintos Objetivos de Desarrollo Sustentable (ODS) relacionados a la contaminación de cursos de agua: ODS 6 (Agua limpia y saneamiento), ODS 12 (Producción y consumo responsables), ODS 14 (Vida submarina) y ODS 15 (Vida de ecosistemas terrestres) (Naciones Unidas, s.f.).
+
+De esta manera, el objetivo de este proyecto es realizar un modelo relacionado a los fenómenos de transporte que rigen el curso del agua. En este caso, se consideró un modelo 2-D en estado estacionario, lo que permitirá simular la forma en que los contaminantes vertidos se distribuyen longitudinal y transversalmente a lo largo del río, con el principal objetivo de tener una idea sobre parámetros óptimos a la cual los distintos actores descargan sus desechos. 
+
+## Explicación breve sistema modelado
+El transporte y dispersión de los contaminantes se rige principalmente por los siguientes fenómenos:
+# Advección:** Corresponde al fenómeno en donde los contaminantes son empujados por la velocidad de la corriente del río en la dirección longitudinal (x). Este fenómeno es el dominante en este eje.
+# Difusión turbulenta:** Se refiere a la dispersión del contaminante en la dirección transversal (y) debido a la turbulencia del flujo.
+# Reacción química:** Corresponde, en este caso, a la desintegración de los contaminantes (p. ej., biodegradación) en una velocidad de reacción de primero orden.
+
+A su vez, para la simplificación del problema y un modelamiento correcto, se plantean los siguientes supuestos clave:
+# Estado estacionario (dC/dt = 0): 
+# Concentración constante en z:
+# Difusión despreciable en x:
+# Difusividad transversal y velocidades constantes:
 ![Diagrama del proyecto](./imagenes/diagrama.png)
 
 ## Instrucciones ejecución código 
