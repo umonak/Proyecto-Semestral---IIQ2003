@@ -24,7 +24,7 @@ Asimismo, la contaminación de cursos de agua representa uno de los problemas m�
 
 De esta manera, el objetivo de este proyecto es realizar un modelo relacionado a los fenómenos de transporte que rigen el curso del agua. En este caso, se consideró un modelo 2-D en estado estacionario, lo que permitirá simular la forma en que los contaminantes vertidos se distribuyen longitudinal y transversalmente a lo largo del río, con el principal objetivo de tener una idea sobre parámetros óptimos a la cual los distintos actores descargan sus desechos. 
 
-## Explicación breve sistema modelado
+## Sistema modelado
 El transporte y dispersión de los contaminantes se rige principalmente por los siguientes fenómenos:
 * **Advección:** Corresponde al fenómeno en donde los contaminantes son empujados por la velocidad de la corriente del río en la dirección longitudinal ($x$). Este fenómeno es el dominante en este eje.
 * **Difusión turbulenta:** Se refiere a la dispersión del contaminante en la dirección transversal ($y$) debido a la turbulencia del flujo.
@@ -36,9 +36,15 @@ A su vez, para la simplificación del problema y un modelamiento correcto, se pl
 * **Difusión despreciable en $x$:** Transporte por advección es mucho mayor que el transporte por difusión en la dirección longitudinal, debido a la alta velocidad del flujo.
 * **Difusividad transversal $y$ velocidades constantes:** $\epsilon_{y}$, $u(x,y)$, y $v(x,y)$ se asumen constantes ($\epsilon_{0}$, $u_{x}$, $v_{y}$) para simplificar la resolución numérica.
 
-En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema tal que
-$$\mathbf{u\frac{\partial C}{\partial x}+\nu\frac{\partial C}{\partial y}-\epsilon_{y}\frac{\partial^{2}C}{\partial y^{2}}=-k_{e}C(x,y)}\quad\text{(Ecuación 2)} \text{ [cite: 65]}$$
+En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema de la siguiente manera
+$$\mathbf{u\frac{\partial C}{\partial x}+\nu\frac{\partial C}{\partial y}-\epsilon_{y}\frac{\partial^{2}C}{\partial y^{2}}=-k_{e}C(x,y)}$$
+con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades longitudinal y transversal, $\epsilon_{y}$ el coeficiente de difusión turbulenta lateral y $k_{e}$ constante de la reacción de primer orden. Las condiciones de borde de este problema corresponden a 
+* **C.B. Neumann (Paredes del Río):** $$\frac{dc}{dy}(y=0)=\frac{dc}{dy}(y=W)=0$$
+* **C.B. Dirichlet (Entrada en $x=0$):** $$C(0,a\le y\le b)=C_{b} \quad \text{ y } \quad C(0,0\le y<a \text{ y } b<y\le W)=C_{0}$$
 ![Diagrama del proyecto](./imagenes/diagrama.png)
+
+## Método numérico
+Para resolver la EDP lineal de segundo orden del sistema, se ha seleccionado el método de Diferencias Finitas en conjunto con el método de solución iterativa de Sobre-Relajación Sucesiva (SOR). En primer lugar
 
 ## Instrucciones ejecución código 
 ## Resultados
