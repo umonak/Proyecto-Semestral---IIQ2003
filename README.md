@@ -26,15 +26,18 @@ De esta manera, el objetivo de este proyecto es realizar un modelo relacionado a
 
 ## Explicación breve sistema modelado
 El transporte y dispersión de los contaminantes se rige principalmente por los siguientes fenómenos:
-* Advección:** Corresponde al fenómeno en donde los contaminantes son empujados por la velocidad de la corriente del río en la dirección longitudinal (x). Este fenómeno es el dominante en este eje.
-* Difusión turbulenta:** Se refiere a la dispersión del contaminante en la dirección transversal (y) debido a la turbulencia del flujo.
-* Reacción química:** Corresponde, en este caso, a la desintegración de los contaminantes (p. ej., biodegradación) en una velocidad de reacción de primero orden.
+* **Advección:** Corresponde al fenómeno en donde los contaminantes son empujados por la velocidad de la corriente del río en la dirección longitudinal ($x$). Este fenómeno es el dominante en este eje.
+* **Difusión turbulenta:** Se refiere a la dispersión del contaminante en la dirección transversal ($y$) debido a la turbulencia del flujo.
+* **Reacción química:** Corresponde, en este caso, a la desintegración de los contaminantes (p. ej., biodegradación) en una velocidad de reacción de primero orden.
 
 A su vez, para la simplificación del problema y un modelamiento correcto, se plantean los siguientes supuestos clave:
-* Estado estacionario (dC/dt = 0): 
-* Concentración constante en z:
-* Difusión despreciable en x:
-* Difusividad transversal y velocidades constantes:
+* **Estado estacionario ($dC/dt$ = 0):** Concentración del contaminante y el caudal del río son constantes con el tiempo
+* **Concentración constante en $z$:** Se asume que el río es poco profundo, permitiendo que se alcance una distribución uniforme del contaminante en la dirección vertical ($z$).
+* **Difusión despreciable en $x$:** Transporte por advección es mucho mayor que el transporte por difusión en la dirección longitudinal, debido a la alta velocidad del flujo.
+* **Difusividad transversal $y$ velocidades constantes:** $\epsilon_{y}$, $u(x,y)$, y $v(x,y)$ se asumen constantes ($\epsilon_{0}$, $u_{x}$, $v_{y}$) para simplificar la resolución numérica.
+
+En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema tal que
+$$\mathbf{u\frac{\partial C}{\partial x}+\nu\frac{\partial C}{\partial y}-\epsilon_{y}\frac{\partial^{2}C}{\partial y^{2}}=-k_{e}C(x,y)}\quad\text{(Ecuación 2)} \text{ [cite: 65]}$$
 ![Diagrama del proyecto](./imagenes/diagrama.png)
 
 ## Instrucciones ejecución código 
