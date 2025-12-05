@@ -43,15 +43,21 @@ En base a lo mencionado con anterioridad, es posible definir la ecuación difere
 con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades longitudinal y transversal, $\epsilon_{y}$ el coeficiente de difusión turbulenta lateral y $k_{e}$ constante de la reacción de primer orden. Las condiciones de borde de este problema corresponden a 
 * **C.B. Neumann (Paredes del Río):** $$\frac{dc}{dy}(y=0)=\frac{dc}{dy}(y=W)=0$$
 * **C.B. Dirichlet (Entrada en $x=0$):** $$C(0,a\le y\le b)=C_{b} \quad \text{ y } \quad C(0,0\le y<a \text{ y } b<y\le W)=C_{0}$$
-![Diagrama del proyecto](./imagenes/diagrama.png)
 
 ## Método numérico
 Para resolver la EDP lineal de segundo orden del sistema, se ha seleccionado el método de Diferencias Finitas en conjunto con el método de solución iterativa de Sobre-Relajación Sucesiva (SOR). 
 
 # Discretización EDP
-El método de Diferencias Finitas es adecuado para discretizar porque permite transformar la EDP en un sistema de ecuaciones lineales al discretizar el dominio (el río) en una malla (o meshgrid) de puntos o nodos $(N_i, N_j)$.
-* **Derivadas Longitudinal ($$\frac{\partial C}{\partial x}$$) y Transversal ($$\frac{\partial C}{\partial y}$$):** Se usa una diferencia finita hacia atrás, entonces queda \\
- $$\frac{\partial C}{\partial x} \approx \frac{C_{i,j}-C_{i-1,j}}{\Delta x} $$ y $$\frac{\partial C}{\partial y} \approx \frac{C_{i,j}-C_{i,j-1}}{\Delta y} $$
+El método de Diferencias Finitas es adecuado para discretizar porque permite transformar la EDP en un sistema de ecuaciones lineales al discretizar el dominio (el río) en una malla (o meshgrid) de nodos $(N_i, N_j)$.
+* **Derivadas Longitudinal ($$\frac{\partial C}{\partial x}$$) y Transversal ($$\frac{\partial C}{\partial y}$$):** Se usa una diferencia finita hacia atrás, entonces quedan: $$\frac{\partial C}{\partial x} \approx \frac{C_{i,j}-C_{i-1,j}}{\Delta x} $$; $$\frac{\partial C}{\partial y} \approx \frac{C_{i,j}-C_{i,j-1}}{\Delta y} $$.
+* **Segunda Derivada Transversal:** Se usa una diferencia finita central, donde $$\frac{\partial^2 C}{\partial y^2} \approx \frac{C_{i,j+1}-2C_{i,j}+C_{i,j-1}}{(\Delta y)^{2}}$$
+
+ Al sustituir estas aproximaciones en la EDP original y agrupando términos, se obtiene una ecuación tal que:
+ 
+ ![](./Imágenes/df.png)
+ 
+# Método SOR
+ 
   
 
 ## Instrucciones ejecución código 
