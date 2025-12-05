@@ -50,7 +50,7 @@ Para resolver la EDP lineal de segundo orden del sistema, se ha seleccionado el 
 
 # Discretización EDP
 El método de Diferencias Finitas es adecuado para discretizar porque permite transformar la EDP en un sistema de ecuaciones lineales al discretizar el dominio (el río) en una malla (o meshgrid) de puntos o nodos $(N_i, N_j)$.
-* **Derivadas Longitudinal ($$\frac{dC}{dx}$$) y Transversal ($$\frac{dC}{dy}$$):** Se usa una diferencia finita hacia atrás, entonces queda
+* **Derivadas Longitudinal ($$\frac{\partial C}{\partial x}$$) y Transversal ($$\frac{\partial C}{\partial y}$$):** Se usa una diferencia finita hacia atrás, entonces queda
 * $$\frac{\partial C}{\partial x} \approx \frac{C_{i,j}-C_{i-1,j}}{\Delta x} $$
 * $$\frac{\partial C}{\partial y} \approx \frac{C_{i,j}-C_{i,j-1}}{\Delta y} $$
   
