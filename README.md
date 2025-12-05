@@ -31,7 +31,7 @@ El transporte y dispersión de los contaminantes se rige principalmente por los 
 * **Reacción química:** Corresponde, en este caso, a la desintegración de los contaminantes (p. ej., biodegradación) en una velocidad de reacción de primero orden.
 
 A su vez, para la simplificación del problema y un modelamiento correcto, se plantean los siguientes supuestos clave:
-* **Estado estacionario ($dC/dt$ = 0):** Concentración del contaminante y el caudal del río son constantes con el tiempo
+* **Estado estacionario ($\frac{dC}{dt}$ = 0):** Concentración del contaminante y el caudal del río son constantes con el tiempo
 * **Concentración constante en $z$:** Se asume que el río es poco profundo, permitiendo que se alcance una distribución uniforme del contaminante en la dirección vertical ($z$).
 * **Difusión despreciable en $x$:** Transporte por advección es mucho mayor que el transporte por difusión en la dirección longitudinal, debido a la alta velocidad del flujo.
 * **Difusividad transversal $y$ velocidades constantes:** $\epsilon_{y}$, $u(x,y)$, y $v(x,y)$ se asumen constantes ($\epsilon_{0}$, $u_{x}$, $v_{y}$) para simplificar la resolución numérica.
