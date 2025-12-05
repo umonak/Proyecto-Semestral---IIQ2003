@@ -36,8 +36,8 @@ A su vez, para la simplificación del problema y un modelamiento correcto, los s
 * **Difusión despreciable en $x$:** Transporte por advección es mucho mayor que el transporte por difusión en la dirección longitudinal, debido a la alta velocidad del flujo.
 * **Difusividad transversal $y$ velocidades constantes:** $\epsilon_{y}$, $u(x,y)$, y $v(x,y)$ se asumen constantes ($\epsilon_{0}$, $u_{x}$, $v_{y}$) para simplificar la resolución numérica.
 
-En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema de la siguiente manera
-$$\mathbf{u\frac{\partial C}{\partial x}+\nu\frac{\partial C}{\partial y}-\epsilon_{y}\frac{\partial^{2}C}{\partial y^{2}}=-k_{e}C(x,y)}$$
+En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema de la siguiente manera:
+* $$\mathbf{u\frac{\partial C}{\partial x}+\nu\frac{\partial C}{\partial y}-\epsilon_{y}\frac{\partial^{2}C}{\partial y^{2}}=-k_{e}C(x,y)}$$
 con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades longitudinal y transversal, $\epsilon_{y}$ el coeficiente de difusión turbulenta lateral y $k_{e}$ constante de la reacción de primer orden. Las condiciones de borde de este problema corresponden a 
 * **C.B. Neumann (Paredes del Río):** $$\frac{dc}{dy}(y=0)=\frac{dc}{dy}(y=W)=0$$
 * **C.B. Dirichlet (Entrada en $x=0$):** $$C(0,a\le y\le b)=C_{b} \quad \text{ y } \quad C(0,0\le y<a \text{ y } b<y\le W)=C_{0}$$
