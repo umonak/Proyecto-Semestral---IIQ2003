@@ -30,7 +30,7 @@ El transporte y dispersión de los contaminantes se rige principalmente por los 
 * **Difusión turbulenta:** Se refiere a la dispersión del contaminante en la dirección transversal ($y$) debido a la turbulencia del flujo.
 * **Reacción química:** Corresponde, en este caso, a la desintegración de los contaminantes (p. ej., biodegradación) en una velocidad de reacción de primero orden.
 
-A su vez, para la simplificación del problema y un modelamiento correcto, algunos de los supuestos supuestos clave son:
+A su vez, para la simplificación del problema y un modelamiento correcto, los supuestos supuestos clave son:
 * **Estado estacionario ($\frac{dC}{dt}$ = 0):** Concentración del contaminante y el caudal del río son constantes con el tiempo
 * **Concentración constante en $z$:** Se asume que el río es poco profundo, permitiendo que se alcance una distribución uniforme del contaminante en la dirección vertical ($z$).
 * **Difusión despreciable en $x$:** Transporte por advección es mucho mayor que el transporte por difusión en la dirección longitudinal, debido a la alta velocidad del flujo.
