@@ -54,7 +54,7 @@ El método de Diferencias Finitas es adecuado para discretizar porque permite tr
 
  Al sustituir estas aproximaciones en la EDP original y agrupando términos, se obtiene una ecuación tal que:
  
- ![](./Imágenes/df.png)
+ ![Resultado Discretización](./Imágenes/df.png)
  
 # Método SOR
  
