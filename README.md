@@ -47,7 +47,7 @@ con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades lon
 ## Método numérico
 Para resolver la EDP lineal de segundo orden del sistema, se ha seleccionado el método de Diferencias Finitas en conjunto con el método de solución iterativa de Sobre-Relajación Sucesiva (SOR). 
 
-# Discretización EDP
+### Discretización EDP
 El método de Diferencias Finitas es adecuado para discretizar porque permite transformar la EDP en un sistema de ecuaciones lineales al discretizar el dominio (el río) en una malla (o meshgrid) de nodos $(N_i, N_j)$.
 * **Derivadas Longitudinal ($$\frac{\partial C}{\partial x}$$) y Transversal ($$\frac{\partial C}{\partial y}$$):** Se usa una diferencia finita hacia atrás, entonces quedan: $$\frac{\partial C}{\partial x} \approx \frac{C_{i,j}-C_{i-1,j}}{\Delta x} $$; $$\frac{\partial C}{\partial y} \approx \frac{C_{i,j}-C_{i,j-1}}{\Delta y} $$.
 * **Segunda Derivada Transversal:** Se usa una diferencia finita central, donde $$\frac{\partial^2 C}{\partial y^2} \approx \frac{C_{i,j+1}-2C_{i,j}+C_{i,j-1}}{(\Delta y)^{2}}$$
@@ -56,7 +56,7 @@ El método de Diferencias Finitas es adecuado para discretizar porque permite tr
  
  ![Resultado Discretización](./Imágenes/df.png)
  
-# Método SOR
+### Método SOR
  
   
 
