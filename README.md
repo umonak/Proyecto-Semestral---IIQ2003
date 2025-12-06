@@ -36,6 +36,10 @@ A su vez, para la simplificación del problema y un modelamiento correcto, los s
 * **Difusión despreciable en $x$:** Transporte por advección es mucho mayor que el transporte por difusión en la dirección longitudinal, debido a la alta velocidad del flujo.
 * **Difusividad transversal $y$ velocidades constantes:** $\epsilon_{y}$, $u(x,y)$, y $v(x,y)$ se asumen constantes ($\epsilon_{0}$, $u_{x}$, $v_{y}$) para simplificar la resolución numérica.
 
+Donde el diagrama representativo del río es el siguiente:
+
+![Diagrama.](./Imágenes/diagrama.png)
+
 En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema de la siguiente manera:
 
 ![EDP problema.](./Imágenes/EDP.png)
