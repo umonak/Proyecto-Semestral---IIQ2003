@@ -42,7 +42,7 @@ Donde el diagrama representativo del río es el siguiente:
 
 En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema de la siguiente manera:
 
-![EDP problema.](./Imágenes/EDP.png)
+<img src="./Imágenes/EDP.png" alt="EDP" width="400"/>
 
 con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades longitudinal y transversal, $\epsilon_{y}$ el coeficiente de difusión turbulenta lateral y $k_{e}$ constante de la reacción de primer orden. Las condiciones de borde de este problema corresponden a 
 * **C.B. Neumann (Paredes del Río):** $$\frac{dc}{dy}(y=0)=\frac{dc}{dy}(y=W)=0$$
@@ -57,8 +57,8 @@ El método de Diferencias Finitas es adecuado para discretizar porque permite tr
 * **Segunda Derivada Transversal:** Se usa una diferencia finita central, donde $$\frac{\partial^2 C}{\partial y^2} \approx \frac{C_{i,j+1}-2C_{i,j}+C_{i,j-1}}{(\Delta y)^{2}}$$
 
  Al sustituir estas aproximaciones en la EDP original y agrupando términos, se obtiene una ecuación tal que:
- 
- ![Resultado Discretización](./Imágenes/df.png)
+
+ <img src="./Imágenes/df.png" alt="Resultado Discretización" width="400"/>
  
 ### Método SOR
 El método de solución iterativa de Sobre-Relajación Sucesiva es un algoritmo iterativo ideal para sistemas lineales de la forma $A\mathbf{x} = \mathbf{b}$, como ocurre en el problema presentado. Para esto, se necesita que los coeficientes de velocidad ($u, v$) y difusividad ($\epsilon_y$) no deben depender de la concentración $C$, donde al ser constantes se cumple con esta condición. Al discretizar como se mostró con anterioridad, se obtiene un sistema de ecuaciones lineales donde el método SOR puede actuar permitiendo obtener una solución de manera muy rápida y precisa.
