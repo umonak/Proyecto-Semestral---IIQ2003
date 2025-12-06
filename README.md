@@ -38,7 +38,7 @@ A su vez, para la simplificación del problema y un modelamiento correcto, los s
 
 Donde el diagrama representativo del río es el siguiente:
 
-![Diagrama.](./Imágenes/diagrama.jpeg)
+<img src="./Imágenes/diagrama.jpeg" alt="Diagrama" width="400"/>
 
 En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema de la siguiente manera:
 
