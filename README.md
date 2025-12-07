@@ -61,7 +61,18 @@ El método de Diferencias Finitas es adecuado para discretizar porque permite tr
 ![Resultado Discretización](./Imágenes/df.png)
  
 ### Método SOR
-El método de solución iterativa de Sobre-Relajación Sucesiva es un algoritmo iterativo ideal para sistemas lineales de la forma $A\mathbf{x} = \mathbf{b}$, como ocurre en el problema presentado. Para esto, se necesita que los coeficientes de velocidad ($u, v$) y difusividad ($\epsilon_y$) no dependan de la concentración $C$, donde al ser constantes se cumple con esta condición. Al discretizar como se mostró con anterioridad, se obtiene un sistema de ecuaciones lineales donde el método SOR puede actuar permitiendo obtener una solución de manera muy rápida y precisa.
+El método de solución iterativa de Sobre-Relajación Sucesiva es un algoritmo iterativo ideal para sistemas lineales de la forma $A\mathbf{x} = \mathbf{b}$, como ocurre en el problema presentado. Para esto, se necesita que los coeficientes de velocidad ($u, v$) y difusividad ($\epsilon_y$) no dependan de la concentración $C$, donde al ser constantes se cumple con esta condición. Al discretizar como se mostró con anterioridad, se obtiene un sistema de ecuaciones lineales donde el método SOR puede actuar permitiendo obtener una solución de manera muy rápida y precisa. 
+
+Para poder utilizar este método, se busca tener una ecuación de la forma 
+![Ecuacion SOR](./Imágenes/ecuacionsor.png)
+
+donde en este caso, al discretizar se obtuvo que 
+
+![Coeficientes SOR](./Imágenes/coef.png)
+
+### Condiciones de Borde
+
+1. **Neumann:** Se plantean dos condiciones de borde debido a la no difusividad de contaminantes hacia las paredes del río, es decir, no hay flujo de contaminante en $y = 0$ e $y = W$. Esto anterior corresponde a $$ \frac{dC}{dy} \big{|}_{x,y=0} = 0 $$ y $$ \frac{dC}{dy} \big{|}_{x,y=W} = 0 $$
 
 ## Instrucciones ejecución código 
 
