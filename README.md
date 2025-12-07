@@ -67,7 +67,9 @@ Para poder utilizar este método, se busca tener una ecuación de la forma
 
 ![Ecuacion SOR](./Imágenes/ecsor.png)
 
-donde en este caso, al discretizar se obtuvo que ![Coeficientes SOR](./Imágenes/coef.png)
+donde en este caso, al discretizar se obtuvo que
+
+![Coeficientes SOR](./Imágenes/coef.png)
 
 ### Condiciones de Borde Discretizadas
 
