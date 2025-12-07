@@ -83,7 +83,7 @@ donde en este caso, al discretizar se obtuvo que
 
 ## Instrucciones ejecución código 
 
-###Requisitos###
+### Requisitos
 Se ha utilizado el lenguaje de programación Python, específicamente la versión Python 3. Las librerías necesarias para la ejecución del código corresponden a
 
 * **NumPy:** Utilizada para el manejo matricial y operaciones numéricas.
@@ -91,10 +91,20 @@ Se ha utilizado el lenguaje de programación Python, específicamente la versió
 
 Si no cuenta con estas librerías instaladas, debe utilizar el comando ***pip install numpy matplotlib*** en la terminal.
 
-###Ejecución###
+### Ejecución
 
-En primer lugar, se debe crear una copia exacta de este repositorio en su computador. Para esto existen varias opciones, donde la más rápida corresponde a la descarga del archivo ***.zip***. Para esto, 
+En primer lugar, se debe crear una copia exacta de este repositorio en su computador. Para esto existen varias opciones, donde la más rápida corresponde a la descarga del archivo ***.zip***. Para esto, se debe hacer click en el botón verde **Code** en la parte superior de la página y seleccionar la opción **Download ZIP**. Posteriormente, se debe descomprimir el archivo descargado, y abrir la nueva carpeta descomprimida en el editor de código utilizado (p. ej. VS Code). De esta manera, al seleccionar el archivo con la extensión .ipynb, se puede ejecutar el código principal.
 
+### Parámetros
+
+Para modificar las condiciones físicas del río, se deben modificar solo los valores definidos al inicio del código.
+* **Velocidades:** Para modificar la velocidad transversal ($x$) del río, se debe modificar la variable definida **u**. Por otra parte, la velocidad longitudinal corresponde a la variable **v**. Esta debe ser en un principio negativa, debido a que valores positivos implicarían que el contaminante no se distribuya en el río.
+* **Difusividad:** Corresponde a la variable **e_y**, donde valores más cercanos a cero implica una menor turbulencia y valores mayores a 1 una turbulencia más significativa.
+* **Concentraciones iniciales del contaminante:** Si se desea modificar la concentración proveniente del tubo con contaminantes, se debe alterar la variable **c_0**. por otra parte, si se desea cambiar la concentración de contaminantes que trae el río, se debe cambiar el valor de **c_b**.
+* **Ancho del tubo con contaminantes:** Se debe alterar la variable **a1**, que indica el ancho del río.
+* **Longitud y ancho del río:** El ancho del río se puede modificar al cambiar el valor de **W**, mientras el largo está definido por la variable **L**.
+
+Al alterar estos valores, el código proporcionará nuevos gráficos en base a la solución encontrada por el método SOR. **Se debe tener precaución, ya que alterar mucho los valores puede implicar que el valor óptimo de $$\omega$$ cambie, por lo que la solución podría tardar más tiempo en encontrarse.**
 
 ## Resultados
 Los principales se encuentran en la carpeta Los gráficos y tablas se encuentran en la carpeta [Resultados](./Resultados). Estos gráficos y tablas resumen las implicancias físicas del modelo de dispersión.
