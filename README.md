@@ -45,8 +45,8 @@ En base a lo mencionado con anterioridad, es posible definir la ecuación difere
 <img src="./Imágenes/EDP.png" alt="EDP" width="400"/>
 
 con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades longitudinal y transversal, $\epsilon_{y}$ el coeficiente de difusión turbulenta lateral y $k_{e}$ constante de la reacción de primer orden. Las condiciones de borde de este problema corresponden a 
-* **C.B. Neumann:** Se plantean dos condiciones de borde debido a la no difusividad de contaminantes hacia las paredes del río, es decir, no hay flujo de contaminante en $y = 0$ e $y = W$. Esto anterior corresponde a $$\frac{dC}{dy} (x, y=0) = 0$$ y $$\frac{dC}{dy} (x, y=W) = 0$$
-* **C.B. Dirichlet:** En este caso se plantean dos condiciones en el inicio del río, donde el agua trae de por si una concentración de contaminantes constante conocida $C_b$ y el eliminador de residuos/contaminantes también trae una concentración conocida $C_0$. De esta manera, y considerando que el ancho del difusor es de $W-a$, se tiene que $$C(0,0\le y\le a)=C_{b}$$ y $$C(0, a<y\le W)=C_{0}$$
+* **C.B. Neumann:** Se plantean dos condiciones de borde debido a la no difusividad de contaminantes hacia las paredes del río, es decir, no hay flujo de contaminante en $y = 0$ e $y = W$. Esto anterior corresponde a: $$\frac{dC}{dy} (x, y=0) = 0$$; $$\quad \frac{dC}{dy} (x, y=W) = 0$$.
+* **C.B. Dirichlet:** En este caso se plantean dos condiciones en el inicio del río, donde el agua trae de por si una concentración de contaminantes constante conocida $C_b$ y el eliminador de residuos/contaminantes también trae una concentración conocida $C_0$. De esta manera, y considerando que el ancho del difusor es de $W-a$, se tiene que: $$C(0,0\le y\le a)=C_{b}$$; $$\quad C(0, a<y\le W)=C_{0}$$.
 
 ## Método numérico
 Para resolver la EDP lineal de segundo orden del sistema, se ha seleccionado el método de Diferencias Finitas en conjunto con el método de solución iterativa de Sobre-Relajación Sucesiva (SOR). 
@@ -54,7 +54,7 @@ Para resolver la EDP lineal de segundo orden del sistema, se ha seleccionado el 
 ### Discretización EDP
 El método de Diferencias Finitas es adecuado para discretizar porque permite transformar la EDP en un sistema de ecuaciones lineales al discretizar el dominio (el río) en una malla (o meshgrid) de nodos $(N_i, N_j)$. Este método de discretización es ideal para dominios con geometrías simples y rectangulares, como ocurre en este caso.
 * **Derivada Longitudinal ($$\frac{\partial C}{\partial x}$$):** Derivada Longitudinal (x): Se ha aplicado una diferencia finita hacia atrás, debido a que el movimiento del río (agua) ocurre desde $x$ hacia $x+\Delta x$, por lo que para obtener la concentración en $i$ se debe observar $i-1$: $$\frac{\partial C}{\partial x} \approx \frac{C_{i,j}-C_{i-1,j}}{\Delta x} $$
-* **Primera y Segunda Derivada Transversal:** Se usa una diferencia finita central debido a que en el eje $y$ el fenómeno de difusión (transporte hacia ambos lados), es decir, para obtener la concentración en $j$ deben observarse los vecinos: $$\frac{\partial C}{\partial y} \approx \frac{C_{i,j+1}-C_{i,j-1}}{2\Delta y}$$; $$\frac{\partial^2 C}{\partial y^2} \approx \frac{C_{i,j+1}-2C_{i,j}+C_{i,j-1}}{\Delta y^{2}}$$
+* **Primera y Segunda Derivada Transversal:** Se usa una diferencia finita central debido a que en el eje $y$ el fenómeno de difusión (transporte hacia ambos lados), es decir, para obtener la concentración en $j$ deben observarse los vecinos: $$\frac{\partial C}{\partial y} \approx \frac{C_{i,j+1}-C_{i,j-1}}{2\Delta y}$$; $$\quad \frac{\partial^2 C}{\partial y^2} \approx \frac{C_{i,j+1}-2C_{i,j}+C_{i,j-1}}{\Delta y^{2}}$$
 
  Al sustituir estas aproximaciones en la EDP original y agrupando términos, se obtiene una ecuación tal que:
 
