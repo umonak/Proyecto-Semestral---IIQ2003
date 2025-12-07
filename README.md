@@ -94,7 +94,7 @@ Si no cuenta con estas librerías instaladas, debe utilizar el comando ***pip in
 
 ### Ejecución
 
-En primer lugar, se debe crear una copia exacta de este repositorio en su computador. Para esto existen varias opciones, donde la más rápida corresponde a la descarga del archivo ***.zip***. Para esto, se debe hacer click en el botón verde **Code** en la parte superior de la página y seleccionar la opción **Download ZIP**. Posteriormente, se debe descomprimir el archivo descargado, y abrir la nueva carpeta descomprimida en el editor de código utilizado (p. ej. VS Code). De esta manera, al seleccionar el archivo con la extensión .ipynb, se puede ejecutar el código principal.
+En primer lugar, se debe crear una copia exacta de este repositorio en su computador. Para esto existen varias opciones, donde la más rápida corresponde a la descarga del archivo ***.zip***. Para esto, se debe hacer click en el botón verde **Code** en la parte superior de la página y seleccionar la opción **Download ZIP**. Posteriormente, se debe descomprimir el archivo descargado, y abrir la nueva carpeta descomprimida en el editor de código utilizado (p. ej. VS Code). De esta manera, al seleccionar el archivo dentro de la carpeta **Código principal** con la extensión ***.ipynb***, se puede ejecutar el código.
 
 ### Parámetros
 
