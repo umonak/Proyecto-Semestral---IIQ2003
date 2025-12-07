@@ -45,8 +45,8 @@ En base a lo mencionado con anterioridad, es posible definir la ecuación difere
 <img src="./Imágenes/EDP.png" alt="EDP" width="400"/>
 
 con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades longitudinal y transversal, $\epsilon_{y}$ el coeficiente de difusión turbulenta lateral y $k_{e}$ constante de la reacción de primer orden. Las condiciones de borde de este problema corresponden a 
-* **C.B. Neumann (Paredes del Río):** $$\frac{dc}{dy}(y=0)=\frac{dc}{dy}(y=W)=0$$
-* **C.B. Dirichlet (Entrada en $x=0$):** $$C(0,0\le y\le a)=C_{b} \quad \text{ y } \quad C(0, a<y\le W)=C_{0}$$
+* **C.B. Neumann:** Se plantean dos condiciones de borde debido a la no difusividad de contaminantes hacia las paredes del río, es decir, no hay flujo de contaminante en $y = 0$ e $y = W$. Esto anterior corresponde a $$\frac{dC}{dy} \big{|}_{x,y=0} = 0$$
+* **C.B. Dirichlet:** $$C(0,0\le y\le a)=C_{b} \quad \text{ y } \quad C(0, a<y\le W)=C_{0}$$
 
 ## Método numérico
 Para resolver la EDP lineal de segundo orden del sistema, se ha seleccionado el método de Diferencias Finitas en conjunto con el método de solución iterativa de Sobre-Relajación Sucesiva (SOR). 
@@ -72,7 +72,7 @@ donde en este caso, al discretizar se obtuvo que
 
 ### Condiciones de Borde
 
-1. **Neumann:** Se plantean dos condiciones de borde debido a la no difusividad de contaminantes hacia las paredes del río, es decir, no hay flujo de contaminante en $y = 0$ e $y = W$. Esto anterior corresponde a $$ \frac{dC}{dy} \big{|}_{x,y=0} = 0 $$ y $$ \frac{dC}{dy} \big{|}_{x,y=W} = 0 $$
+
 
 ## Instrucciones ejecución código 
 
