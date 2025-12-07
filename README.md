@@ -83,6 +83,19 @@ donde en este caso, al discretizar se obtuvo que
 
 ## Instrucciones ejecución código 
 
+###Requisitos###
+Se ha utilizado el lenguaje de programación Python, específicamente la versión Python 3. Las librerías necesarias para la ejecución del código corresponden a
+
+* **NumPy:** Utilizada para el manejo matricial y operaciones numéricas.
+* **MatPlotLib:** Utilizada para la visualización y generación de gráficos.
+
+Si no cuenta con estas librerías instaladas, debe utilizar el comando ***pip install numpy matplotlib*** en la terminal.
+
+###Ejecución###
+
+En primer lugar, se debe crear una copia exacta de este repositorio en su computador. Para esto existen varias opciones, donde la más rápida corresponde a la descarga del archivo ***.zip***. Para esto, 
+
+
 ## Resultados
 Los principales se encuentran en la carpeta Los gráficos y tablas se encuentran en la carpeta [Resultados](./Resultados). Estos gráficos y tablas resumen las implicancias físicas del modelo de dispersión.
 
