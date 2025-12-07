@@ -72,9 +72,12 @@ donde en este caso, al discretizar se obtuvo que
 
 ### Condiciones de Borde Discretizadas
 
-**1. C.B. Neumann:** Para la condición de borde definida como $$\frac{dC}{dy} (x, y=0) = 0$$, mediante la discretización centrada se tiene que la nueva condición de borde en su forma discretizada es $$C_{i,1} = C_{i,-1} \quad \forall i \in {[0, N_x]}$$.\\
+**1. C.B. Neumann:** Para la condición de borde definida como $$\frac{dC}{dy} (x, y=0) = 0$$, mediante la discretización centrada se tiene que la nueva condición de borde en su forma discretizada es $$C_{i,1} = C_{i,-1} \quad \forall i \in {[0, N_x]}$$.
+
 **2. C.B. Neumann:** De manera análoga que para la primera condición de borde, sea $$\frac{dC}{dy} (x, y=W) = 0$$, se tiene que la nueva condición de borde discretizada es $$C_{i,N_y+1} = C_{i,N_y-1} \quad \forall i \in {[0, N_x]}$$.
+
 **3. C.B. Dirichlet:**  En este caso, se define la condición $$C(0, a<y\le W)=C_{0}$$ en su forma discretizada como $$C_{0,j} = C_0 \quad \forall j \in {[j_a, N_y]}$$ donde $$j_a = \frac{a}{\Delta y}$$.
+
 **4. C.B. Dirichlet:** De manera similar que en la condición 3, se define $$C(0, 0<y\le a)=C_{b}$$ en su forma discretizada como $$C_{0,j} = C_b \quad \forall j \in {[0, j_a]}$$ donde $$j_a = \frac{a}{\Delta y}$$.
 
 
