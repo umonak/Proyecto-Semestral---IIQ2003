@@ -64,11 +64,10 @@ El método de Diferencias Finitas es adecuado para discretizar porque permite tr
 El método de solución iterativa de Sobre-Relajación Sucesiva es un algoritmo iterativo ideal para sistemas lineales de la forma $A\mathbf{x} = \mathbf{b}$, como ocurre en el problema presentado. Para esto, se necesita que los coeficientes de velocidad ($u, v$) y difusividad ($\epsilon_y$) no dependan de la concentración $C$, donde al ser constantes se cumple con esta condición. Al discretizar como se mostró con anterioridad, se obtiene un sistema de ecuaciones lineales donde el método SOR puede actuar permitiendo obtener una solución de manera muy rápida y precisa. 
 
 Para poder utilizar este método, se busca tener una ecuación de la forma 
+
 ![Ecuacion SOR](./Imágenes/ecsor.png)
 
-donde en este caso, al discretizar se obtuvo que 
-
-![Coeficientes SOR](./Imágenes/coef.png)
+donde en este caso, al discretizar se obtuvo que ![Coeficientes SOR](./Imágenes/coef.png)
 
 ### Condiciones de Borde Discretizadas
 
