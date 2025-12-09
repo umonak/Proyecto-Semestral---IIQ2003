@@ -113,26 +113,26 @@ Los principales se encuentran en la carpeta Los gráficos y tablas se encuentran
 ### Efecto de los términos convectivos (Velocidad)
 Los resultados evidencian una fuerte dependencia del perfil de concentración respecto a la velocidad del río ($u$).
 
-* **Baja Velocidad:** Como se observa en la **Figura 9**, el contaminante alcanza un rango de concentraciones mucho menor y tiende a estancarse o difundirse lentamente.
-* **Alta Velocidad:** En contraste, la **Figura 3** muestra cómo velocidades altas arrastran el contaminante, modificando drásticamente el perfil aguas abajo.
-
-<p align="center">
-  <img src="./Imágenes/figura9.png" width="45%" alt="">
-  <img src="./Imágenes/figura3.png" width="45%" alt="">
-</p>
+* **Baja Velocidad:** Como se observa en la primera figura, el contaminante alcanza un rango de concentraciones mucho menor y tiende a estancarse o difundirse lentamente.
+* **Alta Velocidad:** En contraste, la segunda figura muestra cómo velocidades altas arrastran el contaminante, modificando drásticamente el perfil aguas abajo.
 
 ### Cambios Difusión v/s Convección
 Se analizó el comportamiento cuando domina uno de los dos fenómenos de transporte:
 
-1.  **Dominio de la Difusión (Figura 7):** El perfil de concentración es mucho más "oscuro" (intenso), indicando que el contaminante se dispersa lateralmente con mayor fuerza antes de ser arrastrado.
-2.  **Dominio de la Convección (Figura 1):** El gráfico presenta un gradiente de colores más claros y amarillos, reflejando que la velocidad inherente del río diluye y transporta la pluma de contaminación rápidamente río abajo antes de que pueda difundirse transversalmente.
+* **Dominio de la Difusión:** El perfil de concentración es mucho más "oscuro" (intenso), indicando que el contaminante se dispersa lateralmente con mayor fuerza antes de ser arrastrado.
+* **Dominio de la Convección:** El gráfico presenta un gradiente de colores más claros y amarillos, reflejando que la velocidad inherente del río diluye y transporta la pluma de contaminación rápidamente río abajo antes de que pueda difundirse transversalmente.
 
-![Figura 7: Dominio Difusivo](./Imágenes/figura7.png)
+<p align="center">
+  <img src="./Imágenes/distribucion contaminantes velocidad baja y difusividad alta.png" width="45%" alt="">
+  <img src="./Imágenes/distribucion contaminantes velocidad alta y difusividad baja.png" width="45%" alt="">
+</p>
 
 ### Limitaciones del Modelo
 El modelo actual asume un comportamiento 2D y desprecia la profundidad del río. Esto ignora los efectos de mezcla en el eje vertical (axial), lo cual es una simplificación importante. Una mejora futura sería incluir una función empírica que corrija la concentración considerando la profundidad del cauce.
 
 ## Conclusiones
+
+El presente estudio evidencia el alto potencial de los ríos en el transporte de contaminantes hacia ecosistemas marinos, demostrando una correlación directa entre las altas velocidades del caudal y la dispersión de residuos industriales. Esta simulación aborda una problemática crítica para Chile, contextualizada en la crisis hídrica y el sobreotorgamiento de derechos de aprovechamiento de aguas, lo que ofrece una herramienta para la toma de decisiones en políticas públicas. El modelo permite evaluar zonas de descarga que presentarían un alto riesgo ecológico, promoviendo una gestión más sustentable de los recursos hídricos. Si bien la aproximación 2-D actual presenta la limitación de ignorar los efectos de mezcla asociados a la profundidad del río, los resultados obtenidos son suficientes para alertar sobre la peligrosidad de la eliminación de desechos en cursos de agua de alta velocidad, destacando la necesidad de establecer regulaciones espaciales más estrictas para la protección ambiental.
 
 ## Referencias bibliográficas 
 1. Chile: el país más afectado por la crisis hídrica en América Latina - Universidad de Chile. (s. f.). Universidad de Chile. Recuperado el 2 de noviembre de 2025, de https://uchile.cl/noticias/184820/chile-el-pais-mas-afectado-por-la-crisis-hidrica-en-america-latina
