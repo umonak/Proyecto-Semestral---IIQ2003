@@ -135,7 +135,9 @@ Se analizó el comportamiento cuando domina uno de los dos fenómenos de transpo
   <img src="./Resultados/mapa2.png" alt="Velocidad Baja y Difusividad Alta" width="400"/>
   <img src="./Resultados/mapa1.png" alt="Velocidad Alta y Difusividad Baja.png" width="400"/>
 </p>
+
 ### Limitaciones del Modelo
+
 El modelo actual asume un comportamiento 2D y desprecia la profundidad del río. Esto ignora los efectos de mezcla en el eje vertical (axial), lo cual es una simplificación importante. Una mejora futura sería incluir una función empírica que corrija la concentración considerando la profundidad del cauce.
 
 ## Conclusiones
