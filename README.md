@@ -38,11 +38,15 @@ A su vez, para la simplificación del problema y un modelamiento correcto, los s
 
 Donde el diagrama representativo del río (visto desde arriba) es el siguiente:
 
-<img src="./Imágenes/diagrama.jpeg" alt="Diagrama" width="400"/>
+<p align="center">
+  <img src="./Imágenes/diagrama.jpeg" alt="Diagrama" width="400"/>
+</p>
 
 En base a lo mencionado con anterioridad, es posible definir la ecuación diferencial parcial (EDP) que define el problema de la siguiente manera:
 
-<img src="./Imágenes/EDP.png" alt="EDP" width="400"/>
+<p align="center">
+  <img src="./Imágenes/EDP.png" alt="EDP" width="400"/>
+</p>
 
 con $C(x,y)$ la concentración del contaminante, $u$ y $\nu$ las velocidades longitudinal y transversal, $\epsilon_{y}$ el coeficiente de difusión turbulenta lateral y $k_{e}$ constante de la reacción de primer orden. Las condiciones de borde de este problema corresponden a 
 * **C.B. Neumann:** Se plantean dos condiciones de borde debido a la no difusividad de contaminantes hacia las paredes del río, es decir, no hay flujo de contaminante en $y = 0$ e $y = W$. Esto anterior corresponde a: $$\frac{dC}{dy} (x, y=0) = 0$$; $$\quad \frac{dC}{dy} (x, y=W) = 0$$
@@ -57,19 +61,24 @@ El método de Diferencias Finitas es adecuado para discretizar porque permite tr
 * **Primera y Segunda Derivada Transversal:** Se usa una diferencia finita central debido a que en el eje $y$ el fenómeno de difusión (transporte hacia ambos lados), es decir, para obtener la concentración en $j$ deben observarse los vecinos: $$\frac{\partial C}{\partial y} \approx \frac{C_{i,j+1}-C_{i,j-1}}{2\Delta y}$$; $$\quad \frac{\partial^2 C}{\partial y^2} \approx \frac{C_{i,j+1}-2C_{i,j}+C_{i,j-1}}{\Delta y^{2}}$$
 
  Al sustituir estas aproximaciones en la EDP original y agrupando términos, se obtiene una ecuación tal que:
-
-![Resultado Discretización](./Imágenes/df.png)
+<p align="center">
+ <img src="./Imágenes/df.png" alt="Resultado Discretización" width="400"/>
+</p>
  
 ### Método SOR
 El método de solución iterativa de Sobre-Relajación Sucesiva es un algoritmo iterativo ideal para sistemas lineales de la forma $A\mathbf{x} = \mathbf{b}$, como ocurre en el problema presentado. Para esto, se necesita que los coeficientes de velocidad ($u, v$) y difusividad ($\epsilon_y$) no dependan de la concentración $C$, donde al ser constantes se cumple con esta condición. Al discretizar como se mostró con anterioridad, se obtiene un sistema de ecuaciones lineales donde el método SOR puede actuar permitiendo obtener una solución de manera muy rápida y precisa. 
 
 Para poder utilizar este método, se busca tener una ecuación de la forma 
 
-![Ecuacion SOR](./Imágenes/ecsor.png)
+<p align="center">
+ <img src="./Imágenes/ecsor.png" alt="Ecuacion SOR" width="400"/>
+</p>
 
 donde en este caso, al discretizar se obtuvo que
 
-![Coeficientes SOR](./Imágenes/coef.png)
+<p align="center">
+ <img src="./Imágenes/coef.png" alt="Coeficientes SOR" width="400"/>
+</p>
 
 ### Condiciones de Borde Discretizadas
 
