@@ -62,7 +62,7 @@ El método de Diferencias Finitas es adecuado para discretizar porque permite tr
 
  Al sustituir estas aproximaciones en la EDP original y agrupando términos, se obtiene una ecuación tal que:
 <p align="center">
- <img src="./Imágenes/df.png" alt="Resultado Discretización" width="400"/>
+ <img src="./Imágenes/df.png" alt="Resultado Discretización" width="600"/>
 </p>
  
 ### Método SOR
@@ -71,13 +71,13 @@ El método de solución iterativa de Sobre-Relajación Sucesiva es un algoritmo 
 Para poder utilizar este método, se busca tener una ecuación de la forma 
 
 <p align="center">
- <img src="./Imágenes/ecsor.png" alt="Ecuacion SOR" width="400"/>
+ <img src="./Imágenes/ecsor.png" alt="Ecuacion SOR" width="500"/>
 </p>
 
 donde en este caso, al discretizar se obtuvo que
 
 <p align="center">
- <img src="./Imágenes/coef.png" alt="Coeficientes SOR" width="400"/>
+ <img src="./Imágenes/coef.png" alt="Coeficientes SOR" width="200"/>
 </p>
 
 ### Condiciones de Borde Discretizadas
