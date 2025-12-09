@@ -110,6 +110,30 @@ Al alterar estos valores, el código proporcionará nuevos gráficos en base a l
 ## Resultados
 Los principales se encuentran en la carpeta Los gráficos y tablas se encuentran en la carpeta [Resultados](./Resultados). Estos gráficos y tablas resumen las implicancias físicas del modelo de dispersión.
 
+### Efecto de los términos convectivos (Velocidad)
+Los resultados evidencian una fuerte dependencia del perfil de concentración respecto a la velocidad del río ($u$).
+
+* **Baja Velocidad:** Como se observa en la **Figura 9**, el contaminante alcanza un rango de concentraciones mucho menor y tiende a estancarse o difundirse lentamente.
+* **Alta Velocidad:** En contraste, la **Figura 3** muestra cómo velocidades altas arrastran el contaminante, modificando drásticamente el perfil aguas abajo.
+
+<p align="center">
+  <img src="./Imágenes/figura9.png" width="45%" alt="">
+  <img src="./Imágenes/figura3.png" width="45%" alt="">
+</p>
+
+### Cambios Difusión v/s Convección
+Se analizó el comportamiento cuando domina uno de los dos fenómenos de transporte:
+
+1.  **Dominio de la Difusión (Figura 7):** El perfil de concentración es mucho más "oscuro" (intenso), indicando que el contaminante se dispersa lateralmente con mayor fuerza antes de ser arrastrado.
+2.  **Dominio de la Convección (Figura 1):** El gráfico presenta un gradiente de colores más claros y amarillos, reflejando que la velocidad inherente del río diluye y transporta la pluma de contaminación rápidamente río abajo antes de que pueda difundirse transversalmente.
+
+![Figura 7: Dominio Difusivo](./Imágenes/figura7.png)
+
+### Limitaciones del Modelo
+El modelo actual asume un comportamiento 2D y desprecia la profundidad del río. Esto ignora los efectos de mezcla en el eje vertical (axial), lo cual es una simplificación importante. Una mejora futura sería incluir una función empírica que corrija la concentración considerando la profundidad del cauce.
+
+## Conclusiones
+
 ## Referencias bibliográficas 
 1. Chile: el país más afectado por la crisis hídrica en América Latina - Universidad de Chile. (s. f.). Universidad de Chile. Recuperado el 2 de noviembre de 2025, de https://uchile.cl/noticias/184820/chile-el-pais-mas-afectado-por-la-crisis-hidrica-en-america-latina
 2. Naciones Unidas. (s.f.). Objetivos de Desarrollo Sostenible. Recuperado el 2 de noviembre de 2025, de https://www.un.org/sustainabledevelopment/es/
