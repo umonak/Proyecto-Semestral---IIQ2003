@@ -122,9 +122,9 @@ Se analizó el comportamiento cuando domina uno de los dos fenómenos de transpo
 * **Dominio de la Difusión:** El perfil de concentración es mucho más "oscuro" (intenso), indicando que el contaminante se dispersa lateralmente con mayor fuerza antes de ser arrastrado.
 * **Dominio de la Convección:** El gráfico presenta un gradiente de colores más claros y amarillos, reflejando que la velocidad inherente del río diluye y transporta la pluma de contaminación rápidamente río abajo antes de que pueda difundirse transversalmente.
 
-<img src="./Imágenes/distribucion contaminantes velocidad baja y difusividad alta.png" width="45%" alt="a">
+<img src="./Imágenes/distribucion contaminantes velocidad baja y difusividad alta.png" alt="Velocidad Baja y Difusividad Alta" width="400"/>
 
-<img src="./Imágenes/distribucion contaminantes velocidad alta y difusividad baja.png" width="45%" alt="a1">
+<img src="./Imágenes/distribucion contaminantes velocidad alta y difusividad baja.png" width="45%" alt="Velocidad Alta y Difusividad Baja.png">
 
 ### Limitaciones del Modelo
 El modelo actual asume un comportamiento 2D y desprecia la profundidad del río. Esto ignora los efectos de mezcla en el eje vertical (axial), lo cual es una simplificación importante. Una mejora futura sería incluir una función empírica que corrija la concentración considerando la profundidad del cauce.
