@@ -128,8 +128,8 @@ Los resultados evidencian una fuerte dependencia del perfil de concentración re
 ### Cambios Difusión v/s Convección
 Se analizó el comportamiento cuando domina uno de los dos fenómenos de transporte:
 
-* **Dominio de la Difusión:** El perfil de concentración es mucho más "oscuro" (intenso), indicando que el contaminante se dispersa lateralmente con mayor fuerza antes de ser arrastrado.
-* **Dominio de la Convección:** El gráfico presenta un gradiente de colores más claros y amarillos, reflejando que la velocidad inherente del río diluye y transporta la pluma de contaminación rápidamente río abajo antes de que pueda difundirse transversalmente.
+* **Dominio de la Difusión:** El perfil de concentración es mucho más claro y se distribuye más, indicando que el contaminante se dispersa lateralmente con mayor fuerza antes de ser arrastrado.
+* **Dominio de la Convección:** El gráfico presenta un gradiente de colores más claros y amarillos, reflejando que la velocidad del río diluye y transporta la pluma de contaminación rápidamente río abajo antes de que pueda difundirse a lo ancho del río.
 
 <p align="center">
   <img src="./Resultados/mapa2.png" alt="Velocidad Baja y Difusividad Alta" width="400"/>
